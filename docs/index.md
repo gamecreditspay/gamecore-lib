@@ -36,7 +36,7 @@ To get started, just `npm install gamecore` or `bower install gamecore`.
 Some functionality is implemented as a module that can be installed separately:
 
 * [Payment Protocol Support](https://github.com/bitpay/bitcore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/gamecredits-project/gamecore-p2p)
+* [Peer to Peer Networking](https://github.com/gamecreditspay/gamecore-p2p)
 * [Bitcoin Core JSON-RPC](https://github.com/bitpay/bitcoind-rpc)
 * [Payment Channels](https://github.com/bitpay/bitcore-channel)
 * [Mnemonics](https://github.com/bitpay/bitcore-mnemonic)

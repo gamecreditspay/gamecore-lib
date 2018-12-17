@@ -75,7 +75,7 @@ transaction.applySignature(receivedSig);
 ```
 
 ## Adding inputs
-Transaction inputs are instances of either [Input](https://github.com/gamecredits-project/gamecore/tree/master/lib/transaction/input) or its subclasses. `Input` has some abstract methods, as there is no actual concept of a "signed input" in the gamecredits scripting system (just valid signatures for <tt>OP_CHECKSIG</tt> and similar opcodes). They are stored in the `input` property of `Transaction` instances.
+Transaction inputs are instances of either [Input](https://github.com/gamecreditspay/gamecore/tree/master/lib/transaction/input) or its subclasses. `Input` has some abstract methods, as there is no actual concept of a "signed input" in the gamecredits scripting system (just valid signatures for <tt>OP_CHECKSIG</tt> and similar opcodes). They are stored in the `input` property of `Transaction` instances.
 
 Gamecore contains two implementations of `Input`, one for spending _Pay to Public Key Hash_ outputs (called `PublicKeyHashInput`) and another to spend _Pay to Script Hash_ outputs for which the redeem script is a Multisig script (called `MultisigScriptHashInput`).
 
@@ -106,7 +106,7 @@ This input contains a set of signatures in a `signatures` property, and each tim
 ## Signing a Transaction
 The following methods are used to manage signatures for a transaction:
 - `getSignatures`: takes an array of `PrivateKey` or strings from which a `PrivateKey` can be instantiated; the transaction to be signed; the kind of [signature hash to use](https://bitcoin.org/en/developer-guide#signature-hash-types). Returns an array of objects with the following properties:
-  - `signature`: an instance of [Signature](https://github.com/gamecredits-project/gamecore/blob/master/lib/crypto/signature.js)
+  - `signature`: an instance of [Signature](https://github.com/gamecreditspay/gamecore/blob/master/lib/crypto/signature.js)
   - `prevTxId`: this input's `prevTxId`,
   - `outputIndex`: this input's `outputIndex`,
   - `inputIndex`: this input's index in the transaction
