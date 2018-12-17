@@ -224,7 +224,7 @@ describe('URI', function() {
   });
 
   it('should be case insensitive to protocol', function() {
-    var uri1 = new URI('lItEcOin:LXc3QtfC179bxQV83r3XaFKfsgXsKGeZv3');
+    var uri1 = new URI('gAmEcRedIts:LXc3QtfC179bxQV83r3XaFKfsgXsKGeZv3');
     var uri2 = new URI('gamecredits:LXc3QtfC179bxQV83r3XaFKfsgXsKGeZv3');
 
     uri1.address.toString().should.equal(uri2.address.toString());
