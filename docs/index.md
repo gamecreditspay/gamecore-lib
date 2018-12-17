@@ -2,7 +2,7 @@
 
 ## Principles
 
-Gamecredits is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Gamecredits network allows for highly resilient litecoin infrastructure, and the developer community needs reliable, open-source tools to implement litecoin apps and services. Gamecore provides a reliable API for JavaScript apps that need to interface with Gamecredits.
+Gamecredits is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Gamecredits network allows for highly resilient gamecredits infrastructure, and the developer community needs reliable, open-source tools to implement gamecredits apps and services. Gamecore provides a reliable API for JavaScript apps that need to interface with Gamecredits.
 
 To get started, just `npm install gamecore` or `bower install gamecore`.
 
@@ -36,7 +36,7 @@ To get started, just `npm install gamecore` or `bower install gamecore`.
 Some functionality is implemented as a module that can be installed separately:
 
 * [Payment Protocol Support](https://github.com/bitpay/bitcore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/litecoin-project/gamecore-p2p)
+* [Peer to Peer Networking](https://github.com/gamecredits-project/gamecore-p2p)
 * [Bitcoin Core JSON-RPC](https://github.com/bitpay/bitcoind-rpc)
 * [Payment Channels](https://github.com/bitpay/bitcore-channel)
 * [Mnemonics](https://github.com/bitpay/bitcore-mnemonic)
