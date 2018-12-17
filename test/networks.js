@@ -26,7 +26,7 @@ describe('Networks', function() {
     networks.testnet.networkMagic.should.deep.equal(new Buffer('fdd2c8f1', 'hex'));
     networks.testnet.port.should.equal(19335);
     networks.testnet.dnsSeeds.should.deep.equal([
-      'testnet-seed.litecointools.com',
+      'testnet-seed.gamecreditstools.com',
       'seed-b.gamecredits.loshan.co.uk'
     ]);
   });
