@@ -1,5 +1,5 @@
 
 
-var litecoreTasks = require('gamecore-build');
+var gamecoreTasks = require('gamecore-build');
 
-litecoreTasks('lib');
+gamecoreTasks('lib');

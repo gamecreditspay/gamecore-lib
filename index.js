@@ -12,8 +12,8 @@ gamecore.versionGuard = function(version) {
     throw new Error(message);
   }
 };
-gamecore.versionGuard(global._litecore);
-global._litecore = gamecore.version;
+gamecore.versionGuard(global._gamecore);
+global._gamecore = gamecore.version;
 
 // crypto
 gamecore.crypto = {};

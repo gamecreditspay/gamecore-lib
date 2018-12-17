@@ -79,7 +79,7 @@ async.series([
     var block2;
     var block3;
 
-    function litecoreTest() {
+    function gamecoreTest() {
       block1 = gamecore.Block.fromString(blockData);
     }
 
@@ -102,7 +102,7 @@ async.series([
     }
 
     var suite = new benchmark.Suite();
-    suite.add('gamecore', litecoreTest, {maxTime: maxTime});
+    suite.add('gamecore', gamecoreTest, {maxTime: maxTime});
     suite.add('bitcoinjs', bitcoinJSTest, {maxTime: maxTime});
     suite.add('bcoin', bcoinTest, {maxTime: maxTime});
     suite.add('fullnode', fullnodeTest, {maxTime: maxTime});

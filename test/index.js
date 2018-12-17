@@ -4,8 +4,8 @@ var should = require('chai').should();
 var gamecore = require('../');
 
 describe('#versionGuard', function() {
-  it('global._litecore should be defined', function() {
-    should.equal(global._litecore, gamecore.version);
+  it('global._gamecore should be defined', function() {
+    should.equal(global._gamecore, gamecore.version);
   });
 
   it('throw an error if version is already defined', function() {
