@@ -1,6 +1,6 @@
 {
-  "name": "litecore-lib",
-  "main": "./litecore-lib.min.js",
+  "name": "gamecore-lib",
+  "main": "./gamecore-lib.min.js",
   "version": "0.13.19",
   "homepage": "http://litecore.io",
   "authors": [

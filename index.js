@@ -6,9 +6,9 @@ var litecore = module.exports;
 litecore.version = 'v' + require('./package.json').version;
 litecore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of litecore-lib found. ' +
-      'Please make sure to require litecore-lib and check that submodules do' +
-      ' not also include their own litecore-lib dependency.';
+    var message = 'More than one instance of gamecore-lib found. ' +
+      'Please make sure to require gamecore-lib and check that submodules do' +
+      ' not also include their own gamecore-lib dependency.';
     throw new Error(message);
   }
 };
