@@ -1,4 +1,4 @@
-Contributing to Litecore
+Contributing to Gamecore
 =======
 
 We're working hard to make *gamecore* the most powerful JavaScript library for working with litecoin. Our goal is to have *gamecore* be a library that can be used by anyone interested in litecoin, and to level expertise differences with great design and documentation.
@@ -101,7 +101,7 @@ These should have a matching static method that can be used for instantiation:
 * `fromString` - Should be able to instantiate with output from `toString`
 * `fromBuffer` - Should likewise be able to instantiate from output from `toBuffer`
 
-`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Litecore methods. For example, calling `JSON.stringify` on a Litecore object will behave as expected and call `transaction.toJSON()` and then stringify it:
+`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of Gamecore methods. For example, calling `JSON.stringify` on a Gamecore object will behave as expected and call `transaction.toJSON()` and then stringify it:
 
 ```javascript
 var transactionString = JSON.stringify(transaction);

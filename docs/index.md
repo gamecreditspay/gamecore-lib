@@ -2,7 +2,7 @@
 
 ## Principles
 
-Litecoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Litecoin network allows for highly resilient litecoin infrastructure, and the developer community needs reliable, open-source tools to implement litecoin apps and services. Litecore provides a reliable API for JavaScript apps that need to interface with Litecoin.
+Litecoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Litecoin network allows for highly resilient litecoin infrastructure, and the developer community needs reliable, open-source tools to implement litecoin apps and services. Gamecore provides a reliable API for JavaScript apps that need to interface with Litecoin.
 
 To get started, just `npm install gamecore` or `bower install gamecore`.
 

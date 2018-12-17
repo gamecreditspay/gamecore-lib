@@ -1,4 +1,4 @@
-# Litecore examples
+# Gamecore examples
 
 ## Generate a random address
 ```javascript
