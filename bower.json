@@ -2,7 +2,7 @@
   "name": "gamecore-lib",
   "main": "./gamecore-lib.min.js",
   "version": "0.13.19",
-  "homepage": "http://litecore.io",
+  "homepage": "http://gamecore.io",
   "authors": [
     "BitPay, Inc."
   ],
@@ -12,7 +12,7 @@
   ],
   "keywords": [
     "litecoin",
-    "litecore",
+    "gamecore",
     "btc",
     "satoshi"
   ],

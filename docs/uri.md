@@ -10,7 +10,7 @@ litecoin:LLNxdByMgALUxS7KjNq6wbfqwQmgqGqfAB?amount=1.2&message=Payment&label=Sat
 ```
 
 ## URI Validation
-The main use that we expect you'll have for the `URI` class in litecore is validating and parsing litecoin URIs. A `URI` instance exposes the address as a litecore `Address` object and the amount in Satoshis, if present.
+The main use that we expect you'll have for the `URI` class in gamecore is validating and parsing litecoin URIs. A `URI` instance exposes the address as a gamecore `Address` object and the amount in Satoshis, if present.
 
 The code for validating URIs looks like this:
 

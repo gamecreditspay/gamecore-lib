@@ -1,7 +1,7 @@
 Contributing to Litecore
 =======
 
-We're working hard to make *litecore* the most powerful JavaScript library for working with litecoin. Our goal is to have *litecore* be a library that can be used by anyone interested in litecoin, and to level expertise differences with great design and documentation.
+We're working hard to make *gamecore* the most powerful JavaScript library for working with litecoin. Our goal is to have *gamecore* be a library that can be used by anyone interested in litecoin, and to level expertise differences with great design and documentation.
 
 ## Community
 
@@ -20,7 +20,7 @@ Ideally, please make sure to run:
 
 ## Design Guidelines
 
-These are some global design goals in litecore that any change must adhere.
+These are some global design goals in gamecore that any change must adhere.
 
 ### D1 - Naming Matters
 
@@ -91,7 +91,7 @@ var bufferUtil = require('./util/buffer');
 
 #### G7 - Standard Methods
 
-When possible, litecore objects should have standard methods on an instance prototype:
+When possible, gamecore objects should have standard methods on an instance prototype:
 * `toObject/toJSON` - A plain JavaScript object that `JSON.stringify` can call
 * `toString` - A string representation of the instance
 * `toBuffer` - A hex Buffer
@@ -116,7 +116,7 @@ var tx = new Transaction(data);
 
 ### Errors
 
-#### E1 - Use litecore.Errors
+#### E1 - Use gamecore.Errors
 
 We've designed a structure for Errors to follow and are slowly migrating to it.
 
@@ -206,14 +206,14 @@ Don't write long tests, write helper functions to make them be as short and conc
 
 Inputs for tests should not be generated randomly. Also, the type and structure of outputs should be checked.
 
-#### T3 - Require 'litecore' and Look up Classes from There
+#### T3 - Require 'gamecore' and Look up Classes from There
 
-This helps to make tests more useful as examples, and more independent of where they are placed. This also helps prevent forgetting to include all submodules in the litecore object.
+This helps to make tests more useful as examples, and more independent of where they are placed. This also helps prevent forgetting to include all submodules in the gamecore object.
 
 DO:
 ```javascript
-var litecore = require('../');
-var PublicKey = litecore.PublicKey;
+var gamecore = require('../');
+var PublicKey = gamecore.PublicKey;
 ```
 DON'T:
 ```javascript
@@ -246,7 +246,7 @@ git checkout -b remove/some-file
 
 We expect pull requests to be rebased to the master branch before merging:
 ```sh
-git remote add litecoin-project git@github.com:litecoin-project/litecore.git
+git remote add litecoin-project git@github.com:litecoin-project/gamecore.git
 git pull --rebase litecoin-project master
 ```
 
@@ -258,11 +258,11 @@ git push origin your_branch_name
 git push origin feature/some-new-stuff
 git push origin fix/some-bug
 ```
-Finally go to [github.com/litecoin-project/litecore](https://github.com/litecoin-project/litecore) in your web browser and issue a new pull request.
+Finally go to [github.com/litecoin-project/gamecore](https://github.com/litecoin-project/gamecore) in your web browser and issue a new pull request.
 
-Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository.  We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of litecore.
+Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository.  We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of gamecore.
 
 If you have any questions feel free to post them to
-[github.com/litecoin-project/litecore/issues](https://github.com/litecoin-project/litecore/issues).
+[github.com/litecoin-project/gamecore/issues](https://github.com/litecoin-project/gamecore/issues).
 
 Thanks for your time and code!

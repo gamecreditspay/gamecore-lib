@@ -23,12 +23,12 @@ bower install gamecore-lib
 
 ## Documentation
 
-The complete docs are hosted here: [litecore documentation](http://litecore.io/guide/). There's also a [litecore API reference](http://litecore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each litecore utility.
+The complete docs are hosted here: [gamecore documentation](http://gamecore.io/guide/). There's also a [gamecore API reference](http://gamecore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each gamecore utility.
 
-- [Read the Developer Guide](http://litecore.io/guide/)
-- [Read the API Reference](http://litecore.io/api/)
+- [Read the Developer Guide](http://gamecore.io/guide/)
+- [Read the API Reference](http://gamecore.io/api/)
 
-To get community assistance and ask for help with implementation questions, please use our [community forums](https://forum.litecore.io/).
+To get community assistance and ask for help with implementation questions, please use our [community forums](https://forum.gamecore.io/).
 
 ## Examples
 
@@ -45,7 +45,7 @@ To get community assistance and ask for help with implementation questions, plea
 
 ## Security
 
-We're using Litecore in production, as are [many others](http://litecore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+We're using Litecore in production, as are [many others](http://gamecore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
 
 If you find a security issue, please email security@bitpay.com.
 
