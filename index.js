@@ -1,71 +1,70 @@
 'use strict';
 
-var litecore = module.exports;
+var gamecore = module.exports;
 
 // module information
-litecore.version = 'v' + require('./package.json').version;
-litecore.versionGuard = function(version) {
+gamecore.version = 'v' + require('./package.json').version;
+gamecore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of litecore-lib found. ' +
-      'Please make sure to require litecore-lib and check that submodules do' +
-      ' not also include their own litecore-lib dependency.';
+    var message = 'More than one instance of gamecore-lib found. ' +
+      'Please make sure to require gamecore-lib and check that submodules do' +
+      ' not also include their own gamecore-lib dependency.';
     throw new Error(message);
   }
 };
-litecore.versionGuard(global._litecore);
-global._litecore = litecore.version;
+gamecore.versionGuard(global._gamecore);
+global._gamecore = gamecore.version;
 
 // crypto
-litecore.crypto = {};
-litecore.crypto.BN = require('./lib/crypto/bn');
-litecore.crypto.ECDSA = require('./lib/crypto/ecdsa');
-litecore.crypto.Hash = require('./lib/crypto/hash');
-litecore.crypto.Random = require('./lib/crypto/random');
-litecore.crypto.Point = require('./lib/crypto/point');
-litecore.crypto.Signature = require('./lib/crypto/signature');
+gamecore.crypto = {};
+gamecore.crypto.BN = require('./lib/crypto/bn');
+gamecore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+gamecore.crypto.Hash = require('./lib/crypto/hash');
+gamecore.crypto.Random = require('./lib/crypto/random');
+gamecore.crypto.Point = require('./lib/crypto/point');
+gamecore.crypto.Signature = require('./lib/crypto/signature');
 
 // encoding
-litecore.encoding = {};
-litecore.encoding.Base58 = require('./lib/encoding/base58');
-litecore.encoding.Base58Check = require('./lib/encoding/base58check');
-litecore.encoding.BufferReader = require('./lib/encoding/bufferreader');
-litecore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
-litecore.encoding.Varint = require('./lib/encoding/varint');
+gamecore.encoding = {};
+gamecore.encoding.Base58 = require('./lib/encoding/base58');
+gamecore.encoding.Base58Check = require('./lib/encoding/base58check');
+gamecore.encoding.BufferReader = require('./lib/encoding/bufferreader');
+gamecore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
+gamecore.encoding.Varint = require('./lib/encoding/varint');
 
 // utilities
-litecore.util = {};
-litecore.util.buffer = require('./lib/util/buffer');
-litecore.util.js = require('./lib/util/js');
-litecore.util.preconditions = require('./lib/util/preconditions');
+gamecore.util = {};
+gamecore.util.buffer = require('./lib/util/buffer');
+gamecore.util.js = require('./lib/util/js');
+gamecore.util.preconditions = require('./lib/util/preconditions');
 
 // errors thrown by the library
-litecore.errors = require('./lib/errors');
+gamecore.errors = require('./lib/errors');
 
 // main bitcoin library
-litecore.Address = require('./lib/address');
-litecore.Block = require('./lib/block');
-litecore.MerkleBlock = require('./lib/block/merkleblock');
-litecore.BlockHeader = require('./lib/block/blockheader');
-litecore.HDPrivateKey = require('./lib/hdprivatekey.js');
-litecore.HDPublicKey = require('./lib/hdpublickey.js');
-litecore.Networks = require('./lib/networks');
-litecore.Opcode = require('./lib/opcode');
-litecore.PrivateKey = require('./lib/privatekey');
-litecore.PublicKey = require('./lib/publickey');
-litecore.Script = require('./lib/script');
-litecore.Transaction = require('./lib/transaction');
-litecore.URI = require('./lib/uri');
-litecore.Unit = require('./lib/unit');
+gamecore.Address = require('./lib/address');
+gamecore.Block = require('./lib/block');
+gamecore.MerkleBlock = require('./lib/block/merkleblock');
+gamecore.BlockHeader = require('./lib/block/blockheader');
+gamecore.HDPrivateKey = require('./lib/hdprivatekey.js');
+gamecore.HDPublicKey = require('./lib/hdpublickey.js');
+gamecore.Networks = require('./lib/networks');
+gamecore.Opcode = require('./lib/opcode');
+gamecore.PrivateKey = require('./lib/privatekey');
+gamecore.PublicKey = require('./lib/publickey');
+gamecore.Script = require('./lib/script');
+gamecore.Transaction = require('./lib/transaction');
+gamecore.URI = require('./lib/uri');
+gamecore.Unit = require('./lib/unit');
 
 // dependencies, subject to change
-litecore.deps = {};
-litecore.deps.bnjs = require('bn.js');
-litecore.deps.bs58 = require('bs58');
-litecore.deps.Buffer = Buffer;
-litecore.deps.elliptic = require('elliptic');
-litecore.deps.scryptsy = require('scryptsy');
-litecore.deps._ = require('lodash');
+gamecore.deps = {};
+gamecore.deps.bnjs = require('bn.js');
+gamecore.deps.bs58 = require('bs58');
+gamecore.deps.Buffer = Buffer;
+gamecore.deps.elliptic = require('elliptic');
+gamecore.deps.scryptsy = require('scryptsy');
+gamecore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-litecore._HDKeyCache = require('./lib/hdkeycache');
-litecore.Transaction.sighash = require('./lib/transaction/sighash');
+gamecore.Transaction.sighash = require('./lib/transaction/sighash');
