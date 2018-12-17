@@ -19,7 +19,7 @@ var transaction = new Transaction()
 
 You can obtain the input and output total amounts of the transaction in satoshis by accessing the fields `inputAmount` and `outputAmount`.
 
-Now, this could just be serialized to hexadecimal ASCII values (`transaction.serialize()`) and sent over to the litecoind reference client.
+Now, this could just be serialized to hexadecimal ASCII values (`transaction.serialize()`) and sent over to the gamecreditsd reference client.
 
 ```bash
 gamecredits-cli sendrawtransaction <serialized transaction>
@@ -94,7 +94,7 @@ Some methods related to adding inputs are:
   - `from(utxos)`: same as above, but passing in an array of Unspent Outputs.
   - `from(utxo, publicKeys, threshold)`: add an input that spends a UTXO with a P2SH output for a Multisig script. The `publicKeys` argument is an array of public keys, and `threshold` is the number of required signatures in the Multisig script.
 
-- `addInput`: Performs a series of checks on an input and appends it to the end of the `input` vector and updates the amount of incoming litecoins of the transaction.
+- `addInput`: Performs a series of checks on an input and appends it to the end of the `input` vector and updates the amount of incoming gamecredits of the transaction.
 - `uncheckedAddInput`: adds an input to the end of the `input` vector and updates the `inputAmount` without performing any checks.
 
 ### PublicKeyHashInput
@@ -149,7 +149,7 @@ These are the current default values in the gamecore library involved on these c
 - `Transaction.DUST_AMOUNT`: `546` (satoshis)
 
 ## Fee calculation
-When outputs' value don't sum up to the same amount that inputs, the difference in litecoins goes to the miner of the block that includes this transaction. The concept of a "change address" usually is associated with this: an output with an address that can be spent by the creator of the transaction.
+When outputs' value don't sum up to the same amount that inputs, the difference in gamecredits goes to the miner of the block that includes this transaction. The concept of a "change address" usually is associated with this: an output with an address that can be spent by the creator of the transaction.
 
 For this reason, some methods in the Transaction class are provided:
 - `change(address)`: Set up the change address. This will set an internal `_changeScript` property that will store the change script associated with that address.
