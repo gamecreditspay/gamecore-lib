@@ -101,7 +101,7 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "gamecore-build": "gamecreditspay/gamecore-build",
+    "gamecore-build": "git://github.com/gamecreditspay/gamecore-build.git",
     "sinon": "^1.13.0"
   },
   "license": "MIT"
